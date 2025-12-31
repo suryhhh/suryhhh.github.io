@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hi, I am SURYA SURESH</title>
+
+<style>
+:root{
+    --dark-red:#8B0000;
+    --light-rose:#F4C2C2;
+    --light:#ffffff;
+}
+
+html{scroll-behavior:smooth;}
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    color:var(--light);
+    background:linear-gradient(135deg,var(--dark-red),var(--light-rose));
+    background-attachment:fixed;
+}
+
+/* Navbar */
+nav{
+    position:sticky;
+    top:0;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(6px);
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:12px 0;
+    z-index:1000;
+}
+
+nav a{
+    color:var(--light);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{color:var(--light-rose);}
+
+/* Header */
+header{
+    text-align:center;
+    padding:80px 20px 40px;
+    background:rgba(0,0,0,0.35);
+}
+
+header h1{
+    font-size:3rem;
+    margin:0;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+/* Sections */
+section{
+    padding:40px 20px;
+    max-width:900px;
+    margin:30px auto;
+    background:rgba(0,0,0,0.25);
+    border-radius:15px;
+    opacity:0;
+    transform:translateY(20px);
+    transition:0.8s;
+}
+
+section.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+h2{
+    border-left:5px solid var(--light);
+    padding-left:12px;
+}
+
+/* Skills */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:22px;
+    margin-top:25px;
+}
+.col-ml { grid-column: 2; }
+.col-da { grid-column: 3; }
+
+.skills-grid div{
+    background:rgba(255,255,255,0.1);
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+}
+.skill{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.skill i{
+    font-size:2rem;
+    color:var(--light-rose);
+}
+
+.skill span{
+    font-weight:bold;
+}
+
+.skill:hover{
+    transform:translateY(-6px) scale(1.05);
+    box-shadow:0 0 15px var(--light-rose);
+}
+
+/* Cards */
+.edu-box,.project-card,.cert-card{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
+}
+
+.edu-box h3,.project-card h3,.cert-card h3{
+    color:var(--light-rose);
+}
+
+.edu-box:hover,.project-card:hover,.cert-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 15px var(--light-rose);
+}
+
+/* Buttons */
+.project-btn,.cert-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:linear-gradient(90deg,var(--dark-red),var(--light-rose));
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.35);
+}
+
+/* Floating buttons */
+.float-btn{
+    position:fixed;
+    width:55px;
+    height:55px;
+    right:20px;
+    border-radius:50%;
+    color:#fff;
+    font-size:26px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+}
+
+#whatsapp{
+    background:#25D366;
+    bottom:90px;
+}
+
+#email{
+    background:var(--dark-red);
+    bottom:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header h1{font-size:2.2rem;}
+}
+</style>
+<link rel="stylesheet" href="./index_files/all.min.css">
+</head>
+
+<body>
+
+<nav>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#about">About</a>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#skills">Skills</a>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#education">Education</a>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#projects">Projects</a>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#certificates">Certificates</a>
+<a href="file:///C:/Users/ACER/OneDrive/Desktop/portfolio-%20sura/index.html#contact">Contact</a>
+</nav>
+
+<header>
+<h1>SURYA SURESH</h1>
+<p>AI | Machine Learning | Data Analyst</p>
+</header>
+
+<section id="about" class="visible">
+<h2>About Me</h2>
+<p><em>Curiosity is where intelligence begins.</em></p>
+<p>
+I’m <strong>Surya Suresh</strong>, exploring Artificial Intelligence and
+Machine Learning through real-world problem solving projects.
+</p>
+</section>
+
+<section id="skills" class="visible">
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<!-- Row 1 -->
+<div class="skill">
+<i class="fa-brands fa-python"></i>
+<span>Python</span>
+</div>
+
+<div class="skill">
+<i class="fa-solid fa-brain"></i>
+<span>Machine Learning</span>
+</div>
+
+<div class="skill">
+<i class="fa-solid fa-chart-line"></i>
+<span>Data Analysis</span>
+</div>
+
+<div class="skill">
+<i class="fa-solid fa-comments"></i>
+<span>Communication</span>
+</div>
+
+<!-- Row 2 (forced alignment) -->
+<div class="skill col-ml">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<span>Animation</span>
+</div>
+
+<div class="skill col-da">
+<i class="fa-solid fa-chart-pie"></i>
+<span>Data Visualization</span>
+</div>
+
+</div></section>
+
+<section id="education">
+<h2>Education</h2>
+
+<div class="edu-box">
+<h3>Higher Secondary – Biology Science</h3>
+<p><strong>GHSS Nandhikara</strong></p>
+<p>2025 – 2027</p>
+</div>
+
+<div class="edu-box">
+<h3>AI &amp; ML Jr Telecom Data Analyst</h3>
+<p><strong>Skill Development Centre, Pudukad</strong></p>
+<p>2025 – 2026</p>
+</div>
+</section>
+
+<section id="projects">
+<h2>AI / ML Projects</h2>
+
+<div class="project-card">
+<h3>AI Career Counselor</h3>
+<p>
+AI application that recommends suitable career paths
+based on user skills, interests, and education.
+</p>
+<a href="https://github.com/suryhhh/surya-zoro.git" class="project-btn" target="_blank">
+View on GitHub 🐙
+</a>
+</div>
+</section>
+
+<section id="certificates">
+<h2>Certificates</h2>
+
+<div class="cert-card">
+<h3>Industrial Visit</h3>
+<p>Completed IV &amp; OJT at ATEES Infomedia Pvt Ltd (5 hours).</p>
+</div>
+
+<div class="cert-card">
+<h3>On The Job Training</h3>
+<p>Completed OJT at ATEES Infomedia Pvt Ltd (80 hours).</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p><strong>Phone:</strong> <a href="tel:+919846204967" style="color:#fff;">+91 9846204967</a></p>
+<p><strong>Email:</strong> <a href="mailto:Suryasuresh4967@gmail.com" style="color:#fff;">Suryasuresh4967@gmail.com</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/surya-suresh-18726a3a0/" target="_blank" style="color:#fff;">www.linkedin.com/in/surya-suresh-18726a3a0/a&gt;</a></p><a href="https://www.linkedin.com/in/surya-suresh-18726a3a0/" target="_blank" style="color:#fff;">
+</a><p><a href="https://www.linkedin.com/in/surya-suresh-18726a3a0/" target="_blank" style="color:#fff;"><strong>GitHub:</strong> </a><a href="https://github.com/suryhhh" target="_blank" style="color:#fff;">github.com/suryhhh</a></p>
+<p><strong>Location:</strong> Thrissur, Kerala</p>
+</section>
+
+<footer>© 2025 SURYA SURESH</footer>
+
+<a href="https://wa.me/919846204967" class="float-btn" id="whatsapp" target="_blank">💬</a>
+<a href="mailto:Suryasuresh4967@gmail.com" class="float-btn" id="email">✉️</a>
+
+<script>
+const sections=document.querySelectorAll("section");
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+}
+});
+},{threshold:0.2});
+sections.forEach(sec=>observer.observe(sec));
+</script>
+
+
+
+</body></html>
